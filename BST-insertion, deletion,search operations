@@ -8,8 +8,7 @@
 
 
 typedef struct Node {
-    
-    //code here...
+   
     int data;
 struct Node *left;
 struct Node *right;
@@ -21,7 +20,7 @@ struct Node *right;
 Node* createNode(int data) {
     
     
-	//code here
+	
 
 	  Node *newNode = (Node*)malloc(sizeof(Node));
     newNode->data = data;
@@ -34,7 +33,7 @@ Node* createNode(int data) {
 Node* insert(Node *root, int data) {
     
     
-    //code here...
+    
     
     if(root == NULL)
         return createNode(data);
@@ -52,7 +51,6 @@ Node* insert(Node *root, int data) {
 Node* findMin(Node *root) {
     
     
-    //code here...
     
      while(root && root->left != NULL)
         root = root->left;
@@ -64,7 +62,7 @@ Node* findMin(Node *root) {
 
 Node* deleteNode(Node *root, int key) {
     
-     //code here...
+     .
     if(root == NULL)
         return NULL;
 
@@ -111,7 +109,7 @@ bool search(Node *root, int key) {
     else
         return search(root->right, key);
     
-    //code here..
+    
     
     
 }
